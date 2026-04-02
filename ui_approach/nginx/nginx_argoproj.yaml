@@ -10,12 +10,10 @@ spec:
     path: ui_approach/nginx
     repoURL: https://github.com/rajcharanthecoder/argocd-demos.git
     targetRevision: main
-  sources: []
   project: default
   syncPolicy:
     automated:
       prune: false
       selfHeal: true
-      enabled: true
     syncOptions:
       - CreateNamespace=true
